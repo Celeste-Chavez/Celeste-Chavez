@@ -1,0 +1,243 @@
+    @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    @import url('https://fonts.googleapis.com/css2?&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Micro+5&display=swap');
+
+    :root {
+        /*COLOR*/
+        --verde-amarillo: #CFF50C;
+        --verde: #90F344;
+        --blanco-gris: #E7E7E7;
+        --gris-claro: #8b8b8b;
+        --gris-oscuro: #252726;
+
+
+        /* TEXTO */
+        --h1: 48px;
+        --h2: 40px;
+        --h3: 33px;
+        --h4: 28px;
+        --h5: 23px;
+        --h6: 19px;
+        --p: 16px;
+        --sm: 13px;
+        --xsm: 11px;
+        --do-hyeon: "Do Hyeon", sans-serif;
+        --staatliches: "Staatliches", sans-serif;
+        --kanit: "Kanit", sans-serif;
+
+        /* ESPACIADORES */
+        --padding-1: 14px;
+        --padding-2: 42px;
+        /*3 x padding-1*/
+        --padding-3: 56px;
+        /*4 x padding-1*/
+        --padding-4: 70px;
+        /*5 x padding-1*/
+        --gap-1: 10px;
+    }
+
+    /* RESETEO */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* ESTILOS TIPOGRAFICOS */
+    h1 {
+        font-family: var(--kanit);
+        font-size: var(--h1);
+        font-weight: 700;
+    }
+
+    h2 {
+        font-family: var(--kanit);
+        font-size: var(--h2);
+        font-weight: 700;
+    }
+
+    h3 {
+        font-family: var(--kanit);
+        font-size: var(--h3);
+        font-weight: 700;
+    }
+
+    h4 {
+        font-family: var(--do-hyeon);
+        font-size: var(--h4);
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-family: var(--staatliches);
+        font-size: var(--h5);
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    h6 {
+        font-family: var(--do-hyeon);
+        font-size: var(--h6);
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-family: var(--kanit);
+        font-size: var(--p);
+        font-weight: 400;
+    }
+
+    .sm {
+        font-family: var(--kanit);
+        font-size: var(--sm);
+        font-weight: 400;
+        text-transform: uppercase;
+
+    }
+
+    .xsm {
+        font-family: var(--kanit);
+        font-size: var(--xsm);
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .bold {
+        font-weight: 700;
+    }
+
+    /* SELECTOR DE CLASE */
+
+    /* MODULARIZACION DE CSS */
+    img {
+        background-color: var();
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    /* CIERRE DE MODULARIZACION */
+
+    /* SELECTOR DE CLASE*/
+    .contenedor {
+        width: 80%;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+    /* HEADER */
+    header {
+        display: flex;
+        justify-content: center;
+        color: var(var(--verde));
+        padding: var(--padding-1);
+        align-items: center;
+        font-size: var(--h6);
+    }
+
+    header img {
+        width: 5px;
+        height: auto;
+        margin: var(--padding-2);
+    }
+
+    header nav ul {
+        display: flex;
+        list-style: none;
+        gap: var(--gap-1);
+    }
+
+    header nav ul li a {
+        font-family: var(--do-hyeon);
+        color: var(--blanco-gris);
+        background-color: black;
+        text-decoration: none;
+        display: block;
+        padding: var(--padding-1);
+        border-radius: 2px;
+    }
+
+    header nav ul li a:hover {
+        background-color: var(--verde);
+        color: var(--gris-oscuro);
+    }
+
+    /* CIERRE HEADER */
+
+    /* HEADER VERTICAL */
+    .header-vertical {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding: var(--padding-1);
+        background-color: black;
+    }
+
+    .header-vertical nav ul {
+        flex-direction: column;
+        gap: var(--gap-1);
+    }
+
+    .header-vertical nav ul li a {
+        font-size: var(--h6);
+        display: block;
+        padding: var(--padding-1);
+    }
+
+    .header-vertical nav ul li a.active {
+        background-color: var(--verde);
+        color: var(--gris-oscuro);
+    }
+
+    /* BODY */
+    body {
+        background-image: url('/img/fondo_pagina.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: var(--gris-oscuro);
+    }
+
+    img {
+        min-width: 170px;
+        min-height: 170px;
+    }
+
+    section {
+        display: none;
+    }
+
+    section.active {
+        display: block;
+    }
+
+    /* FINAL BODY */
+
+    /* CARD */
+    .card {
+        padding: var(--padding-3);
+        margin: 15%;
+        vertical-align: top;
+        position: relative;
+        max-width: 100%;
+        border-radius: inherit;
+        text-align: var(--alignment);
+
+        border: 5px solid black;
+        border-radius: 20px;
+        border-bottom-right-radius: 5px;
+        background-color: azure;
+        box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* FINAL CARD */
