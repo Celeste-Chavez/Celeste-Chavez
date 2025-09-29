@@ -227,6 +227,7 @@
     /* CARD */
     .card {
         padding: var(--padding-2);
+        align-items: center;
         margin: 20%;
         margin-top: 10%;
         margin-bottom: 10%;
@@ -246,6 +247,7 @@
     .card img {
         min-width: auto;
         min-height: 10%;
+        max-width: 400px;
         object-fit: contain
     }
 
@@ -269,7 +271,7 @@
     .img_responsiva {
         position: relative;
         display: inline-block;
-        width: 180px;
+        width: 200px;
         height: 270px;
     }
 
@@ -282,6 +284,7 @@
         object-fit: cover;
         transition: opacity 0.3s;
         transition: transform 0.3s;
+        border-radius: 10px;
     }
 
     .img-hover {
@@ -314,6 +317,7 @@
 
     .gradiente_hover {
         bottom: 0;
+        left: 0;
         transform: scale(1.2);
         position: absolute;
         width: 100%;
@@ -339,7 +343,8 @@
     .texto_img {
         position: absolute;
         bottom: 0;
-        width: 100%;
+        left: 0;
+        width: 90%;
         padding: var(--padding-1);
         text-align: center;
         color: white;
@@ -362,4 +367,16 @@
     }
     .padding_1{
         padding: var(--padding-1);
+    }
+    .padding_3{
+        padding: var(--padding-3);
+    }
+    .space_around{
+        justify-content: space-around;
+    }
+    .space_evenly{
+    justify-content: space-evenly;
+    }
+    .flex_end{
+        justify-content: flex-end;
     }
