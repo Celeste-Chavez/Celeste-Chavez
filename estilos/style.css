@@ -114,14 +114,11 @@
 
     /* SELECTOR DE CLASE */
 
-    /* MODULARIZACION DE CSS */
     img {
-        background-color: var();
-        min-width: 300px;
-        min-height: 300px;
+        min-width: 200px;
+        min-height: 200px;
     }
 
-    /* CIERRE DE MODULARIZACION */
 
     /* SELECTOR DE CLASE*/
     .contenedor {
@@ -141,9 +138,11 @@
     }
 
     header img {
-        width: 5px;
+        width: 4px;
         height: auto;
         margin: var(--padding-2);
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     header nav ul {
@@ -201,16 +200,23 @@
     }
 
     /* BODY */
+    main {
+        flex: 1;
+    }
+
+    html,body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     body {
         background-image: url('/img/fondo_pagina.png');
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-color: var(--gris-oscuro);
-
     }
-
-    iframe {}
 
     img {
         min-width: 170px;
@@ -226,6 +232,59 @@
     }
 
     /* FINAL BODY */
+
+    /*VIDEO DISPLAY*/
+    .video_display {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding: var(--padding-1);
+    }
+
+    .video_display h3 {
+        font-family: var(--do-hyeon);
+    }
+
+    iframe {
+        padding: var(--padding-1);
+        border: 0px;
+    }
+
+    /*VIDEO DISPLAY FINAL*/
+
+    /* MINIHEADER */
+    .mini_header {
+        display: flex;
+        justify-content: space-around;
+        color: var(var(--verde));
+        padding: var(--padding-1);
+        align-items: center;
+        font-size: var(--h6);
+    }
+
+    .mini_header nav ul {
+        display: flex;
+        list-style: none;
+        gap: var(--gap-1);
+    }
+
+    .mini_header nav ul li a {
+        font-family: var(--do-hyeon);
+        color: var(--blanco-gris);
+        background-color: black;
+        text-decoration: none;
+        display: block;
+        padding: var(--padding-1);
+        border-radius: 2px;
+    }
+
+    .mini_header nav ul li a:hover {
+        background-color: var(--verde);
+        color: var(--gris-oscuro);
+    }
+
+    /* MINIHEADER FINAL */
 
     /* CARD */
     .card {
@@ -251,7 +310,7 @@
         min-width: auto;
         min-height: 10%;
         max-width: 400px;
-        object-fit: contain
+        object-fit: contain;
     }
 
     .card p {
@@ -263,6 +322,47 @@
         background-color: var(--gris-claro);
         font-family: var(--staatliches);
         padding: var(--padding-1);
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    /* CARD 2 */
+    .card2 {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: var(--padding-2);
+        align-items: center;
+        position: relative;
+        max-width: 1300px;
+        text-align: var(--alignment);
+        border-radius: 20px;
+        border-bottom-right-radius: 5px;
+        background-color: black;
+        color: var(--blanco-gris);
+        border: 5px solid black;
+        box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+
+    .card2 img {
+        min-width: auto;
+        min-height: 10%;
+        max-width: 400px;
+        object-fit: contain;
+    }
+
+    .card2 p {
+        padding: 3px;
+    }
+
+    .card2 h2 {
+        color: var(--gris-oscuro);
+        background-color: white;
+        font-family: var(--staatliches);
+        padding: var(--padding-1);
+        margin: var(--padding-1);
         display: inline-block;
         border-radius: 5px;
     }
@@ -364,7 +464,7 @@
     /* FOOTER CONTAINER */
 
     footer {
-        position: fixed;
+        position: relative;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -392,7 +492,7 @@
         border-top-right-radius: 0.75rem;
     }
 
-    .footer_elements text{
+    .footer_elements text {
         font-size: var(--h3);
     }
 
@@ -428,6 +528,10 @@
         padding: var(--padding-1);
     }
 
+    .padding_2 {
+        padding: var(--padding-2);
+    }
+
     .padding_3 {
         padding: var(--padding-3);
     }
@@ -443,3 +547,5 @@
     .justify_center {
         justify-content: center;
     }
+
+    /* CIERRE DE MODULARIZACION */
