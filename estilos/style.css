@@ -210,6 +210,7 @@
 
     }
 
+    iframe {}
 
     img {
         min-width: 170px;
@@ -439,6 +440,6 @@
         justify-content: space-evenly;
     }
 
-    .flex_end {
-        justify-content: flex-end;
+    .justify_center {
+        justify-content: center;
     }
