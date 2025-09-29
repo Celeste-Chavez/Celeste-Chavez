@@ -207,7 +207,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-color: var(--gris-oscuro);
+
     }
+
 
     img {
         min-width: 170px;
@@ -290,12 +292,13 @@
     .img-hover {
         opacity: 0;
         z-index: 2;
-        
+
     }
 
     .img_responsiva:hover {
-    z-index: 40; 
+        z-index: 40;
     }
+
     .img-normal {
         z-index: 1;
     }
@@ -331,7 +334,7 @@
         opacity: 1;
     }
 
-    .wraper{
+    .wraper {
         overflow: hidden;
         opacity: 1;
         transform: scale(1.1);
@@ -354,29 +357,88 @@
         transition: opacity 0.3s;
         z-index: 4;
     }
+
     /* IMAGENES_RESPONSIVAS FINAL */
 
+    /* FOOTER CONTAINER */
 
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .footer_container {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .footer_elements {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        color: var(var(--verde));
+        padding: var(--padding-1);
+        align-items: center;
+        font-size: var(--h6);
+        color: white;
+        background-color: #000000;
+        border-top-left-radius: 0.75px;
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem;
+    }
+
+    .footer_elements text{
+        font-size: var(--h3);
+    }
+
+    .fa-brands {
+        color: white;
+        font-size: var(--h5);
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .fa-brands:hover {
+        transform: translateY(-5px);
+        color: var(--verde);
+    }
+
+    .footer_container nav ul {
+        display: flex;
+        list-style: none;
+        gap: var(--gap-1);
+    }
+
+    /* FOOTER CONTAINER FINAL*/
 
     /*MODULARIZACIÓN DE CSS*/
     .display_flex {
         display: flex;
     }
+
     .display_block {
-    display: block;
+        display: block;
     }
-    .padding_1{
+
+    .padding_1 {
         padding: var(--padding-1);
     }
-    .padding_3{
+
+    .padding_3 {
         padding: var(--padding-3);
     }
-    .space_around{
+
+    .space_around {
         justify-content: space-around;
     }
-    .space_evenly{
-    justify-content: space-evenly;
+
+    .space_evenly {
+        justify-content: space-evenly;
     }
-    .flex_end{
+
+    .flex_end {
         justify-content: flex-end;
     }
