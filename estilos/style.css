@@ -147,7 +147,7 @@
     }
 
     header img:hover{
-        transform: translateY(-5px);
+        transform: scale(1.1) rotate(5deg);
     }
 
     header nav ul {
@@ -225,11 +225,12 @@
         height: auto;
         margin: var(--padding-3);
         transition: transform 0.3s ease;
+        
         margin-top: 0;
     }
 
     .header_index img:hover{
-        transform: translateY(-5px);
+        transform: scale(1.1) rotate(5deg);
     }
 
     .header_index nav ul {
