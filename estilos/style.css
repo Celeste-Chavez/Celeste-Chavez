@@ -276,7 +276,7 @@
     }
 
     body {
-        background-image: url('/img/fondo_pagina.png');
+        background-image: url('/img/general/fondo_pagina.png');
         background-size: cover;
         background-position: center;
         background-repeat: repeat;
